@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 316" width="1000" height="316" role="img" aria-labelledby="t d"><title id="t">How a finding moves</title><desc id="d">How a finding moves. Scan: Find what is exposed. 75–80 assessments. Tools: Qualys VMDR, Nmap, Wireshark. Detect: Separate signal from noise. ~20% better fidelity. Tools: MITRE ATT&amp;CK, EDR platforms, IDS tuning. Respond: Contain it, fast. ~30% lower MTTR. Tools: Python, PowerShell, FortiGate, Volatility 3. Close: Prove the fix held. tracked to closure. Tools: remediation tracking, audit evidence, security documentation.</desc><style>.sans{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif}.mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace}</style>
+<line x1="55" y1="40" x2="751" y2="40" stroke="#E0E6F1" stroke-width="2"/>
+<circle cx="55" cy="40" r="7" fill="#1F52C2"/>
+<text class="sans" x="48" y="88" font-size="22" font-weight="700" fill="#0D1830" letter-spacing="-0.4">Scan</text>
+<text class="sans" x="48" y="112" font-size="14" fill="#3A4869">Find what is exposed.</text>
+<line x1="48" y1="128" x2="256" y2="128" stroke="#E0E6F1"/>
+<text class="mono" x="48" y="152" font-size="13.5" font-weight="600" fill="#0D1830">75–80 assessments</text>
+<rect x="48" y="172" width="109" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="58" y="189.6" font-size="13" fill="#3A4869">Qualys VMDR</text>
+<rect x="48" y="206" width="52" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="58" y="223.6" font-size="13" fill="#3A4869">Nmap</text>
+<rect x="48" y="240" width="93" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="58" y="257.6" font-size="13" fill="#3A4869">Wireshark</text>
+<circle cx="287" cy="40" r="7" fill="#1F52C2"/>
+<text class="sans" x="280" y="88" font-size="22" font-weight="700" fill="#0D1830" letter-spacing="-0.4">Detect</text>
+<text class="sans" x="280" y="112" font-size="14" fill="#3A4869">Separate signal from noise.</text>
+<line x1="280" y1="128" x2="488" y2="128" stroke="#E0E6F1"/>
+<text class="mono" x="280" y="152" font-size="13.5" font-weight="600" fill="#0D1830">~20% better fidelity</text>
+<rect x="280" y="172" width="117" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="290" y="189.6" font-size="13" fill="#3A4869">MITRE ATT&amp;CK</text>
+<rect x="280" y="206" width="125" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="290" y="223.6" font-size="13" fill="#3A4869">EDR platforms</text>
+<rect x="280" y="240" width="101" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="290" y="257.6" font-size="13" fill="#3A4869">IDS tuning</text>
+<circle cx="519" cy="40" r="7" fill="#1F52C2"/>
+<text class="sans" x="512" y="88" font-size="22" font-weight="700" fill="#0D1830" letter-spacing="-0.4">Respond</text>
+<text class="sans" x="512" y="112" font-size="14" fill="#3A4869">Contain it, fast.</text>
+<line x1="512" y1="128" x2="720" y2="128" stroke="#E0E6F1"/>
+<text class="mono" x="512" y="152" font-size="13.5" font-weight="600" fill="#0D1830">~30% lower MTTR</text>
+<rect x="512" y="172" width="68" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="522" y="189.6" font-size="13" fill="#3A4869">Python</text>
+<rect x="512" y="206" width="101" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="522" y="223.6" font-size="13" fill="#3A4869">PowerShell</text>
+<rect x="512" y="240" width="93" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="522" y="257.6" font-size="13" fill="#3A4869">FortiGate</text>
+<rect x="512" y="274" width="117" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="522" y="291.6" font-size="13" fill="#3A4869">Volatility 3</text>
+<circle cx="751" cy="40" r="7" fill="#0A6647"/>
+<text class="sans" x="744" y="88" font-size="22" font-weight="700" fill="#0D1830" letter-spacing="-0.4">Close</text>
+<text class="sans" x="744" y="112" font-size="14" fill="#3A4869">Prove the fix held.</text>
+<line x1="744" y1="128" x2="952" y2="128" stroke="#E0E6F1"/>
+<text class="mono" x="744" y="152" font-size="13.5" font-weight="600" fill="#0D1830">tracked to closure</text>
+<rect x="744" y="172" width="181" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="754" y="189.6" font-size="13" fill="#3A4869">remediation tracking</text>
+<rect x="744" y="206" width="133" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="754" y="223.6" font-size="13" fill="#3A4869">audit evidence</text>
+<rect x="744" y="240" width="197" height="26" rx="13" fill="#EEF2FA" stroke="#D5DDEA"/><text class="mono" x="754" y="257.6" font-size="13" fill="#3A4869">security documentation</text>
+</svg>

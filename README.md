@@ -8,9 +8,27 @@ I'm a cyber security engineer in the Master of Applied Computing co-op at the Un
 
 My work sits where tooling meets process. Qualys and Nmap findings that become tracked remediation, MITRE ATT&CK detection logic, FortiGate and FortiMail hardening, and Python and PowerShell automation that takes hours out of incident response.
 
-**[tanusreereddy.com](https://tanusreereddy.com)** · [LinkedIn](https://www.linkedin.com/in/TanusreeReddy) · [gavinno@uwindsor.ca](mailto:gavinno@uwindsor.ca)
+<p>
+  <a href="https://tanusreereddy.com"><img src="assets/link-portfolio.svg" alt="Portfolio: tanusreereddy.com" height="40"></a>
+  <a href="https://www.linkedin.com/in/TanusreeReddy"><img src="assets/link-linkedin.svg" alt="LinkedIn" height="40"></a>
+  <a href="mailto:gavinno@uwindsor.ca"><img src="assets/link-email.svg" alt="Email: gavinno@uwindsor.ca" height="40"></a>
+</p>
+
+## How a finding moves
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/pipeline-light.svg">
+  <img alt="How a finding moves. Scan: find what is exposed, 75 to 80 assessments, with Qualys VMDR, Nmap and Wireshark. Detect: separate signal from noise, about 20% better fidelity, with MITRE ATT&CK, EDR platforms and IDS tuning. Respond: contain it fast, about 30% lower MTTR, with Python, PowerShell, FortiGate and Volatility 3. Close: prove the fix held, tracked to closure, with remediation tracking, audit evidence and security documentation." src="assets/pipeline-light.svg" width="100%">
+</picture>
 
 ## Experience
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/timeline-light.svg">
+  <img alt="Timeline, 2021 to 2026. Study: CVR College of Engineering, B.Tech in Cyber Security, 2021 to 2025; University of Windsor, Master of Applied Computing co-op, 2026 to now. Work: Palo Alto Networks virtual simulation, 2024; BlueCloud Softech intern, 2025." src="assets/timeline-light.svg" width="100%">
+</picture>
 
 **Cyber Security Intern, BlueCloud Softech Solutions** (2025)
 
@@ -31,14 +49,18 @@ A 15-person security team, covering vulnerability management, detection engineer
 
 ## Selected work
 
-| Repository | What it does |
-| --- | --- |
-| [vuln-priority-engine](https://github.com/tanu-1309/vuln-priority-engine) | Ranks scanner output by how likely a CVE is to be exploited, not by CVSS alone. Enriches findings with EPSS, CISA KEV and asset criticality, then produces an SLA-bucketed remediation queue. Runs offline on bundled sample data. |
-| [sentinel-triage](https://github.com/tanu-1309/sentinel-triage) | SIEM alert triage. Clusters events by entity and time window, matches Sigma rules mapped to MITRE ATT&CK, and has an LLM summarise each incident with citations that must point to real event IDs. Includes an analyst review queue and a precision/recall harness. |
-| [iocextract](https://github.com/tanu-1309/iocextract) | Pulls IPs, domains, URLs, emails and file hashes out of logs and reports, rejects version-string false positives, and defangs indicators so they're safe to paste into a ticket. Python, stdlib plus pydantic. |
-| [soc-automation-lab](https://github.com/tanu-1309/soc-automation-lab) | An automated SOC workflow on local VMs: Wazuh detects, The Hive tracks cases, Shuffle orchestrates, and VirusTotal enriches alerts. |
-| [elk-siem-dashboard](https://github.com/tanu-1309/elk-siem-dashboard) | A SIEM on the ELK stack in Docker, with Filebeat and Logstash parsing, GeoIP enrichment, Kibana dashboards and alert rules. |
-| [ai_soc](https://github.com/tanu-1309/ai_soc) | Local-first, AI-assisted SOC research: trained intrusion-detection models, alert triage on a local Ollama LLM, Wazuh integration and response planning. |
+<p>
+  <a href="https://github.com/tanu-1309/vuln-priority-engine"><img src="assets/cards/vuln-priority-engine.svg" alt="vuln-priority-engine: ranks CVEs by exploit likelihood (EPSS, CISA KEV, asset criticality) instead of CVSS alone. Python." width="400"></a>
+  <a href="https://github.com/tanu-1309/sentinel-triage"><img src="assets/cards/sentinel-triage.svg" alt="sentinel-triage: SIEM triage that clusters events, matches Sigma rules, and requires LLM summaries to cite real event IDs. Python, Sigma, OpenSearch." width="400"></a>
+</p>
+<p>
+  <a href="https://github.com/tanu-1309/iocextract"><img src="assets/cards/iocextract.svg" alt="iocextract: extracts IPs, domains, URLs and hashes from logs, then defangs them for safe sharing. Python, pydantic." width="400"></a>
+  <a href="https://github.com/tanu-1309/soc-automation-lab"><img src="assets/cards/soc-automation-lab.svg" alt="soc-automation-lab: automated SOC workflow where Wazuh detects, The Hive tracks cases and Shuffle orchestrates. Wazuh, The Hive, Shuffle." width="400"></a>
+</p>
+<p>
+  <a href="https://github.com/tanu-1309/elk-siem-dashboard"><img src="assets/cards/elk-siem-dashboard.svg" alt="elk-siem-dashboard: a SIEM on the ELK stack in Docker with GeoIP enrichment, Kibana dashboards and alert rules. Elasticsearch, Logstash, Kibana." width="400"></a>
+  <a href="https://github.com/tanu-1309/ai_soc"><img src="assets/cards/ai_soc.svg" alt="ai_soc: local-first, AI-assisted SOC research with trained IDS models and alert triage on Ollama. Python, Ollama, Wazuh." width="400"></a>
+</p>
 
 **Coursework and research**
 
@@ -47,14 +69,6 @@ A 15-person security team, covering vulnerability management, detection engineer
 - **Cloud storage security on blockchain.** Elliptic-curve encryption with Ethereum smart contracts for hash-based integrity checks.
 - **Published paper (co-author).** Botnet detection on the Bot-IoT dataset with Decision Tree, Random Forest and 1D-CNN models, in the International Journal of Research Publication and Reviews (IJRPR).
 
-## Toolbox
-
-| Area | Tools |
-| --- | --- |
-| Assess and detect | Qualys VMDR, Nmap, Wireshark, EDR platforms, MITRE ATT&CK |
-| Investigate | Autopsy, Volatility 3, FTK Imager, Windows registry analysis, chain of custody |
-| Harden and automate | FortiGate, FortiMail (SPF, DKIM, DMARC), Python, PowerShell, Bash |
-| Govern | Security audits, risk management, security documentation and policies |
-| Also | Java, C, JavaScript, Flask, Git, AWS and Azure fundamentals |
+Also comfortable with Autopsy and FTK Imager, Java, C, JavaScript, Flask, Git, and AWS and Azure fundamentals.
 
 I'm open to opportunities. Email is the quickest way to reach me.
