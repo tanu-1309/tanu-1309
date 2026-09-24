@@ -13,6 +13,7 @@ My work sits where tooling meets process. Qualys and Nmap findings that become t
 ## Experience
 
 **Cyber Security Intern, BlueCloud Softech Solutions** (2025)
+
 A 15-person security team, covering vulnerability management, detection engineering and incident response.
 
 - Ran 75–80 vulnerability assessments with Qualys VMDR and Nmap, tracking findings, remediation timelines and audit evidence through to closure.
