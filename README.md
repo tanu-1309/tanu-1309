@@ -278,33 +278,6 @@ Designed and executed a complete digital forensics investigation workflow within
 
 ---
 
-### 🤖 AI-Augmented Security Operations Center (AI-SOC)
-**[View Repository](https://github.com/tanu-1309/ai_soc)**
-
-Local-first, research-grade SOC platform combining machine learning intrusion detection, LLM-assisted alert triage, and a prototype response orchestrator, packaged as a Docker Compose stack of small services.
-
-**Architecture Highlights:**
-- **Detection Layer:** Wazuh (manager, indexer, dashboard) plus Suricata and Zeek network analysis, feeding a correlation engine
-- **Analysis Layer:** ML inference API for IDS models, an alert-triage service, and a RAG service (ChromaDB) over incident-response runbooks
-- **Response Layer:** Response orchestrator with a planner, safety checks, post-action verification, and EDR, firewall, identity and Wazuh adapters; The Hive and Cortex configured for case management
-- **Monitoring:** Prometheus, Grafana and Loki dashboards for SIEM health, alert triage and ML inference
-
-**Technical Features:**
-- IDS models (Random Forest, XGBoost, Decision Tree) trained on the CICIDS2017 dataset, with training script and inference API included
-- Local LLM inference via Ollama for alert triage, so no hosted LLM API is required
-- Retrieval-augmented generation over runbooks for DoS/DDoS, phishing and ransomware response
-- Swarm-scale attack simulation in the correlation engine, with experiment write-ups comparing single-agent and swarm runs
-- Services for analyst feedback and model retraining, plus unit and integration tests
-
-**Technologies:** Python, FastAPI, Docker Compose, Wazuh, Suricata, Zeek, The Hive, Cortex, Ollama, ChromaDB, Redis, scikit-learn, XGBoost, Prometheus, Grafana, Loki, CICIDS2017 Dataset
-
-**Scope:**
-- Research prototype; the response orchestrator is a prototype, not a production SOAR
-- Local-first by design: event data is processed by local services and Ollama-backed inference rather than a hosted LLM API
-- Apache 2.0 licensed
-
----
-
 ### 🎯 Sentinel Triage: Automated SIEM Alert Correlation
 **[View Repository](https://github.com/tanu-1309/sentinel-triage)**
 
