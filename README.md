@@ -12,9 +12,13 @@
 
 ## 🎯 Professional Overview
 
-Cyber security professional with a proven track record in **vulnerability assessment**, **security automation**, and **cyber risk reporting** across consulting-style, cross-functional environments. Currently pursuing a **Master of Applied Computing (Co-op)** at the University of Windsor, specializing in implementing technical security frameworks, automated monitoring solutions, and incident response orchestration that support risk remediation, compliance, and organizational resilience.
+Cyber security engineer with hands-on experience in **vulnerability assessment**, **detection engineering**, **security automation**, and **cyber risk reporting** across consulting-style, cross-functional teams. Currently pursuing a **Master of Applied Computing (Co-op)** at the University of Windsor.
+
+My work sits where tooling meets process: scanner findings that become tracked remediation, MITRE ATT&CK detection logic, firewall and email hardening, and Python and PowerShell automation that takes hours out of incident response. At BlueCloud Softech I ran that loop end to end: scan it, triage it, write it up, and chase the fix until it closed.
 
 **Core Expertise:** Security Operations Center (SOC) automation • Vulnerability management • Security documentation & policy development • Digital forensics & incident response • Threat intelligence integration • Python/PowerShell automation • MITRE ATT&CK framework implementation
+
+**Portfolio:** [tanusreereddy.com](https://tanusreereddy.com) • **Status:** Open to opportunities
 
 ---
 
@@ -209,6 +213,8 @@ pie title Technical Skill Distribution
 ### 🔹 Cyber Security Intern | BlueCloud Softech Solutions
 **Jan 2025 – Dec 2025**
 
+*Vulnerability management, detection engineering and incident response inside a 15-person security team.*
+
 **Vulnerability Assessment & Remediation:**
 - Executed **75-80 vulnerability assessments** using Qualys VMDR and Nmap across multiple concurrent engagements
 - Managed remediation tracking via Excel-based systems, coordinating closure of security findings across cross-functional teams
@@ -232,7 +238,7 @@ pie title Technical Skill Distribution
 ---
 
 ### 🔹 Virtual Intern | Palo Alto Networks
-**Jul 2024 – Sep 2024**
+**Jul 2024 – Sep 2024** • Virtual job simulation
 
 **Threat Detection Optimization:**
 - Configured and fine-tuned intrusion detection systems (IDS) and firewalls, increasing threat identification accuracy by **35%**
@@ -275,34 +281,34 @@ Designed and executed a complete digital forensics investigation workflow within
 ### 🤖 AI-Augmented Security Operations Center (AI-SOC)
 **[View Repository](https://github.com/tanu-1309/ai_soc)**
 
-Local-first SOC automation platform combining machine learning intrusion detection, alert enrichment, and response orchestration for security operations research.
+Local-first, research-grade SOC platform combining machine learning intrusion detection, LLM-assisted alert triage, and a prototype response orchestrator, packaged as a Docker Compose stack of small services.
 
 **Architecture Highlights:**
-- **Detection Layer:** Wazuh/Sysmon log collection → Entity clustering → Sigma rules + MITRE ATT&CK mapping
-- **Analysis Layer:** VirusTotal threat intelligence → IOC extraction → Automated triage with severity scoring
-- **Response Layer:** The Hive incident queue → Shuffle orchestration → EDR/firewall remediation actions
-- **Reporting Layer:** Chain-of-custody documentation → Compliance audit evidence
+- **Detection Layer:** Wazuh (manager, indexer, dashboard) plus Suricata and Zeek network analysis, feeding a correlation engine
+- **Analysis Layer:** ML inference API for IDS models, an alert-triage service, and a RAG service (ChromaDB) over incident-response runbooks
+- **Response Layer:** Response orchestrator with a planner, safety checks, post-action verification, and EDR, firewall, identity and Wazuh adapters; The Hive and Cortex configured for case management
+- **Monitoring:** Prometheus, Grafana and Loki dashboards for SIEM health, alert triage and ML inference
 
 **Technical Features:**
-- Trained IDS models on CICIDS2017 dataset for network intrusion detection
-- Local LLM inference via Ollama for alert triage (no external API dependencies)
-- Retrieval-augmented generation over security knowledge bases
-- Swarm-scale attack simulation for response testing
-- Prototype response orchestrator with automated remediation workflows
+- IDS models (Random Forest, XGBoost, Decision Tree) trained on the CICIDS2017 dataset, with training script and inference API included
+- Local LLM inference via Ollama for alert triage, so no hosted LLM API is required
+- Retrieval-augmented generation over runbooks for DoS/DDoS, phishing and ransomware response
+- Swarm-scale attack simulation in the correlation engine, with experiment write-ups comparing single-agent and swarm runs
+- Services for analyst feedback and model retraining, plus unit and integration tests
 
-**Technologies:** Python, Wazuh, Sigma Rules, MITRE ATT&CK, VirusTotal API, The Hive, Shuffle, Ollama, CICIDS2017 Dataset
+**Technologies:** Python, FastAPI, Docker Compose, Wazuh, Suricata, Zeek, The Hive, Cortex, Ollama, ChromaDB, Redis, scikit-learn, XGBoost, Prometheus, Grafana, Loki, CICIDS2017 Dataset
 
-**Research Impact:**
-- Demonstrates practical AI-assisted SOC operations at research scale
-- Local-first architecture ensures sensitive security data never leaves environment
-- Modular design enables component-level testing and validation
+**Scope:**
+- Research prototype; the response orchestrator is a prototype, not a production SOAR
+- Local-first by design: event data is processed by local services and Ollama-backed inference rather than a hosted LLM API
+- Apache 2.0 licensed
 
 ---
 
 ### 🎯 Sentinel Triage: Automated SIEM Alert Correlation
 **[View Repository](https://github.com/tanu-1309/sentinel-triage)**
 
-Production-ready SIEM automation system that cuts mean-time-to-triage through intelligent correlation, Sigma rule detection, and LLM-powered summarization with citation grounding.
+A trimmed-down, offline-verifiable slice of SIEM alert triage: correlates endpoint and authentication events into candidate incidents, matches Sigma rules mapped to MITRE ATT&CK, and has an LLM summarize each incident with citations that are mechanically checked against the real events.
 
 **Architecture Components:**
 
@@ -314,9 +320,103 @@ LLM Triage (Citation Grounded) → Analyst Review Queue → Eval Harness (Precis
 **Core Capabilities:**
 - **Correlation Engine:** Time-window entity clustering groups events into candidate incidents (15-min default window)
 - **Detection Layer:** Practical Sigma rule subset with field selections + count/distinct_count aggregations
-- **Triage Automation:** LLM function-calling with mandatory citation grounding (hallucinated event IDs rejected)
+- **Triage Automation:** LLM function-calling with mandatory citation grounding (hallucinated event IDs rejected); ships with a deterministic offline client and an OpenAI function-calling adapter for real use
 - **Analyst Queue:** SQLite-backed review workflow (approve/reject/escalate with audit trail)
 - **Eval Harness:** Automated precision/recall/F1/FPR measurement against labeled datasets
+- **Offline by Design:** Redis Streams, OpenSearch and the LLM client each have an in-memory or deterministic stand-in, so the full test suite and eval harness run with no Docker, network or API key
+
+**Measured Results (bundled synthetic dataset, 388 events / 296 incidents):**
+- Precision 1.00, recall 0.83, F1 0.91, false-positive rate 0.00
+- Impossible-travel recall is 0.50, a documented limitation of windowed correlation, which can split a two-country session into separate incidents
 
 **Bundled Detection Rules (Sigma + MITRE):**
 - Brute Force Authentication (T1110/T1110.001): ≥5 failures in 10min
+- Impossible Travel Between Successful Logins (T1078): successful logins from ≥2 countries in 30min
+- Privilege Use Following Repeated Authentication Failures (T1078/T1068): ≥3 failures and ≥1 privilege use in 15min
+- Account Lockout Following Failed Login Burst (T1110.001): ≥4 failures and ≥1 lockout in 10min
+
+---
+
+### 🧮 Vulnerability Priority Engine
+**[View Repository](https://github.com/tanu-1309/vuln-priority-engine)**
+
+Turns a scanner's flat CVE list into a ranked, SLA-bucketed remediation queue by weighing how likely a flaw is to be exploited, not just its CVSS severity.
+
+**Core Capabilities:**
+- **Scanner Adapters:** Parses Trivy JSON reports and generic CVE CSV exports (the kind Nessus, Qualys and OpenVAS produce) into one normalized finding model
+- **Enrichment:** Merges CVSS with EPSS exploit probability, CISA KEV confirmed-exploitation status and asset criticality; runs offline on bundled fixtures, with helpers to refresh from the live EPSS and KEV feeds
+- **Risk Scoring:** Configurable weighted score defined in `policy.yaml` (default weights: CVSS 35%, EPSS 35%, KEV 20%, asset criticality 10%) mapped to priority buckets with SLAs; CVEs in the CISA KEV catalog are forced into the critical bucket
+- **API:** FastAPI service with auto-generated Swagger docs, a Docker image and 68 tests
+
+**Technologies:** Python, FastAPI, Trivy, EPSS, CISA KEV, Docker
+
+---
+
+### 🔎 iocextract: IOC Extraction and Defanging
+**[View Repository](https://github.com/tanu-1309/iocextract)**
+
+Offline blue-team utility that pulls indicators of compromise out of raw logs, emails and threat reports.
+
+**Core Capabilities:**
+- **Extraction:** IPv4/IPv6 addresses, domains, URLs, emails and MD5/SHA-1/SHA-256 hashes, returned as a deduplicated, classified JSON result
+- **False-Positive Guards:** Rejects version strings such as `1.2.3` and `v1.2.3.4rc1`, out-of-range octets, and treats `invoice.exe` as a filename rather than a domain
+- **Defanging:** Defangs indicators for safe sharing (`hxxp://evil[.]com`) and refangs analyst notation on the way in
+- **CLI:** JSON and table output, 38 offline tests, standard library plus pydantic only
+
+**Technologies:** Python, pydantic, uv, pytest
+
+---
+
+### 🛡️ SOC Automation Lab
+**[View Repository](https://github.com/tanu-1309/soc-automation-lab)**
+
+Automated SOC workflow on local virtual machines using open-source tools, designed to detect, analyze and respond to incidents such as Mimikatz activity.
+
+**Core Capabilities:**
+- **Detection:** Wazuh for endpoint monitoring and detection
+- **Case Management:** The Hive for incident cases
+- **Automation:** Shuffle orchestrating the workflow between tools
+- **Enrichment and Alerting:** VirusTotal enrichment of alerts, with email/SMS notification for critical incidents
+
+**Technologies:** Wazuh, The Hive, Shuffle, VirusTotal API
+
+---
+
+### 📊 ELK Stack SIEM Dashboard
+**[View Repository](https://github.com/tanu-1309/elk-siem-dashboard)**
+
+SIEM built on the ELK stack for real-time security monitoring, threat detection and incident response, deployed with Docker Compose.
+
+**Core Capabilities:**
+- **Log Collection and Parsing:** Filebeat and Logstash ingest logs from firewalls, IDS, servers and applications, with Grok patterns and field normalization
+- **Enrichment:** GeoIP mapping of IP addresses
+- **Visualization:** Pre-built Kibana dashboards for security monitoring
+- **Alerting:** Automated alerts and built-in rules for common attack patterns
+
+**Technologies:** Elasticsearch, Logstash, Kibana, Filebeat, Docker
+
+---
+
+## 📄 Research & Additional Projects
+
+### IoT Botnet Detection using Deep Learning and Machine Learning
+**Co-authored publication, International Journal of Research Publication and Reviews (IJRPR)**
+
+Applied Decision Tree, Random Forest and 1D-CNN models to the Bot-IoT dataset to classify network traffic and detect botnet-driven DDoS, DoS, data theft and reconnaissance attacks, reporting over 99% accuracy.
+
+### Other Security Projects
+- **Cryptographic Key Management System (CKMS):** Web-based key management system in Python, Flask and SQLite, using AES-GCM, RSA-OAEP and PBKDF2-HMAC-SHA256 for encrypted key storage, with documented key lifecycle (generation, rotation, revocation, audit logging), role-based access control and a reporting dashboard
+- **Cloud Security on Blockchain:** Cloud storage architecture combining Elliptic Curve Integrated Encryption with Ethereum smart contracts for hash-based integrity checks; reported 18% fewer false verification errors and 94% data integrity accuracy
+
+---
+
+## 🎓 Education
+
+- **Master of Applied Computing (Co-op)**, University of Windsor • 2026 – Present
+- **Bachelor of Technology, Computer Science & Engineering (Cyber Security)**, CVR College of Engineering • 2021 – 2025 • CGPA 9.17 / 10
+
+---
+
+## 📬 Get in Touch
+
+Open to opportunities. The quickest way to reach me is email at [gavinno@uwindsor.ca](mailto:gavinno@uwindsor.ca); you can also find me on [LinkedIn](https://linkedin.com/in/TanusreeReddy) and at [tanusreereddy.com](https://tanusreereddy.com).
