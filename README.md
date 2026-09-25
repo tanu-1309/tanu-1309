@@ -22,6 +22,51 @@ My work sits where tooling meets process: scanner findings that become tracked r
 
 ---
 
+## 🤖 AI, ML & GenAI Workflow
+
+```mermaid
+%%{init: {'theme':'dark'}}%%
+graph TB
+    subgraph ML["ML: Botnet Detection"]
+        A[Bot-IoT Dataset<br/>network traffic] --> B[Decision Tree]
+        A --> C[Random Forest]
+        A --> D[1D-CNN<br/>deep learning]
+        B --> E[Attack Classification<br/>DDoS / DoS / Data Theft / Reconnaissance]
+        C --> E
+        D --> E
+    end
+
+    subgraph GEN["GenAI: LLM Triage"]
+        F[Endpoint and Auth Events] --> G[Correlate and Detect<br/>Sigma rules, MITRE ATT&CK]
+        G --> I[LLM Triage<br/>function calling + cited event IDs]
+        I --> J{Citations match<br/>real events?}
+        J -->|Yes| K[Analyst Review Queue<br/>approve / reject / escalate]
+        J -->|No| L[Assessment Rejected<br/>not trusted]
+        I -.->|scored on labeled data| M[Eval Harness<br/>precision / recall / FPR]
+    end
+
+    E ~~~ F
+
+    classDef data fill:#1f2a44,stroke:#60a5fa,color:#ffffff
+    classDef model fill:#2d1f44,stroke:#a78bfa,color:#ffffff
+    classDef gate fill:#3b2f10,stroke:#f5b14c,color:#ffffff
+    classDef stop fill:#3a1a1a,stroke:#f87171,color:#ffffff
+    classDef ok fill:#0f3a2e,stroke:#34d399,color:#ffffff
+    class A,F,G data
+    class B,C,D,I model
+    class J gate
+    class L stop
+    class E,K,M ok
+    style ML fill:#0d1117,stroke:#334155
+    style GEN fill:#0d1117,stroke:#334155
+```
+
+**ML:** the pipeline from my co-authored IJRPR paper on IoT botnet detection: Decision Tree, Random Forest and 1D-CNN models on the Bot-IoT dataset, reporting over 99% accuracy.
+
+**GenAI:** the triage workflow in [sentinel-triage](https://github.com/tanu-1309/sentinel-triage). The LLM has to cite real event IDs, and a check rejects any assessment whose citations are not in the incident. By default it runs offline against a deterministic stand-in for the LLM client, with an OpenAI function-calling adapter for real use.
+
+---
+
 ## 💼 Professional Timeline
 
 ```mermaid
