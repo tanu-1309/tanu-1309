@@ -1,74 +1,322 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/ledger-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/ledger-light.svg">
-  <img alt="Tanu Sree Reddy Gavinnolla. I find the gaps, then make sure they actually get closed. Findings ledger: 75 to 80 vulnerability assessments closed; EDR agent baselines standardised across 500+ endpoints; MITRE ATT&CK detection logic, about 20% better fidelity; automated revocation and host isolation, about 30% lower MTTR; IDS and firewall tuning, 35% higher accuracy. Next role: open to opportunities." src="assets/ledger-light.svg" width="100%">
-</picture>
+<div align="center">
 
-I'm a cyber security engineer in the Master of Applied Computing co-op at the University of Windsor. As a security intern at BlueCloud Softech I worked the whole loop on a vulnerability: scan it, triage it, write it up, and chase the fix until it closed.
+![Header](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=12,14,16,18,20&height=300&section=header&text=Tanu%20Sree%20Reddy%20Gavinnolla&fontSize=50&fontColor=fff&animation=fadeIn&fontAlignY=38&desc=Cyber%20Security%20Professional%20%7C%20Security%20Automation%20Architect&descAlignY=55&descAlign=50)
 
-My work sits where tooling meets process. Qualys and Nmap findings that become tracked remediation, MITRE ATT&CK detection logic, FortiGate and FortiMail hardening, and Python and PowerShell automation that takes hours out of incident response.
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/TanusreeReddy)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:gavinno@uwindsor.ca)
+[![Location](https://img.shields.io/badge/Windsor%2C%20Ontario-00599C?style=for-the-badge&logo=google-maps&logoColor=white)](#)
 
-<p>
-  <a href="https://tanusreereddy.com"><img src="assets/link-portfolio.svg" alt="Portfolio: tanusreereddy.com" height="40"></a>
-  <a href="https://www.linkedin.com/in/TanusreeReddy"><img src="assets/link-linkedin.svg" alt="LinkedIn" height="40"></a>
-  <a href="mailto:gavinno@uwindsor.ca"><img src="assets/link-email.svg" alt="Email: gavinno@uwindsor.ca" height="40"></a>
-</p>
+</div>
 
-## How a finding moves
+---
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/pipeline-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/pipeline-light.svg">
-  <img alt="How a finding moves. Scan: find what is exposed, 75 to 80 assessments, with Qualys VMDR, Nmap and Wireshark. Detect: separate signal from noise, about 20% better fidelity, with MITRE ATT&CK, EDR platforms and IDS tuning. Respond: contain it fast, about 30% lower MTTR, with Python, PowerShell, FortiGate and Volatility 3. Close: prove the fix held, tracked to closure, with remediation tracking, audit evidence and security documentation." src="assets/pipeline-light.svg" width="100%">
-</picture>
+## 🎯 Professional Overview
 
-## Experience
+Cyber security professional with a proven track record in **vulnerability assessment**, **security automation**, and **cyber risk reporting** across consulting-style, cross-functional environments. Currently pursuing a **Master of Applied Computing (Co-op)** at the University of Windsor, specializing in implementing technical security frameworks, automated monitoring solutions, and incident response orchestration that support risk remediation, compliance, and organizational resilience.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/timeline-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="assets/timeline-light.svg">
-  <img alt="Timeline, 2021 to 2026. Study: CVR College of Engineering, B.Tech in Cyber Security, 2021 to 2025; University of Windsor, Master of Applied Computing co-op, 2026 to now. Work: Palo Alto Networks virtual simulation, 2024; BlueCloud Softech intern, 2025." src="assets/timeline-light.svg" width="100%">
-</picture>
+**Core Expertise:** Security Operations Center (SOC) automation • Vulnerability management • Security documentation & policy development • Digital forensics & incident response • Threat intelligence integration • Python/PowerShell automation • MITRE ATT&CK framework implementation
 
-**Cyber Security Intern, BlueCloud Softech Solutions** (2025)
+---
 
-A 15-person security team, covering vulnerability management, detection engineering and incident response.
+## 🏗️ Security Operations Architecture
 
-- Ran 75–80 vulnerability assessments with Qualys VMDR and Nmap, tracking findings, remediation timelines and audit evidence through to closure.
-- Standardised EDR agent baselines across 500+ endpoints.
-- Built MITRE ATT&CK-aligned detection logic that lifted lateral-movement and process-anomaly detection fidelity by about 20%.
-- Automated credential revocation and host isolation in Python and PowerShell against firewall and threat-intel APIs, contributing to about 30% lower MTTR.
-- Supported forensic analysis and containment on a compromised AWS EC2 instance, and hardened FortiGate rules plus SPF, DKIM and DMARC on FortiMail.
+```mermaid
+mindmap
+  root((Security Operations))
+    Vulnerability Management
+      Qualys VMDR
+      Nmap Scanning
+      Remediation Tracking
+      Audit Reporting
+    Threat Detection
+      EDR Platforms
+      MITRE ATT&CK
+      Sigma Rules
+      IDS Configuration
+    Security Automation
+      Python Scripts
+      PowerShell Automation
+      API Integration
+      Workflow Orchestration
+    Incident Response
+      Digital Forensics
+      Log Analysis
+      Evidence Collection
+      Chain of Custody
+    Compliance & Risk
+      Security Audits
+      Policy Documentation
+      Risk Assessment
+      DMARC Implementation
+```
 
-**Virtual Intern, Palo Alto Networks** (2024, virtual job simulation)
+---
 
-- Tuned intrusion detection and firewall policy, raising threat-identification accuracy by 35%.
-- Consolidated 10 threat-intelligence APIs into a single interface, halving analysis time.
+## 💼 Professional Timeline
 
-**Education.** Master of Applied Computing (co-op), University of Windsor, 2026 to present. B.Tech in Computer Science and Engineering (Cyber Security), CVR College of Engineering, 2021–2025, CGPA 9.17/10.
+```mermaid
+timeline
+    title Career & Education Journey
+    section 2021-2025
+        Bachelor of Technology : Cyber Security Specialization
+                                : CVR College of Engineering
+                                : CGPA 9.17 out of 10
+    section 2024
+        Virtual Intern : Palo Alto Networks
+                       : Threat Detection Optimization
+                       : IDS Configuration
+    section 2025
+        Security Intern : BlueCloud Softech Solutions
+                        : 75 plus Vulnerability Assessments
+                        : EDR Deployment 500 plus Endpoints
+                        : Forensic Analysis
+    section 2026-Present
+        Graduate Studies : Master of Applied Computing
+                         : University of Windsor
+                         : Security Automation Focus
+```
 
-## Selected work
+---
 
-<p>
-  <a href="https://github.com/tanu-1309/vuln-priority-engine"><img src="assets/cards/vuln-priority-engine.svg" alt="vuln-priority-engine: ranks CVEs by exploit likelihood (EPSS, CISA KEV, asset criticality) instead of CVSS alone. Python." width="400"></a>
-  <a href="https://github.com/tanu-1309/sentinel-triage"><img src="assets/cards/sentinel-triage.svg" alt="sentinel-triage: SIEM triage that clusters events, matches Sigma rules, and requires LLM summaries to cite real event IDs. Python, Sigma, OpenSearch." width="400"></a>
-</p>
-<p>
-  <a href="https://github.com/tanu-1309/iocextract"><img src="assets/cards/iocextract.svg" alt="iocextract: extracts IPs, domains, URLs and hashes from logs, then defangs them for safe sharing. Python, pydantic." width="400"></a>
-  <a href="https://github.com/tanu-1309/soc-automation-lab"><img src="assets/cards/soc-automation-lab.svg" alt="soc-automation-lab: automated SOC workflow where Wazuh detects, The Hive tracks cases and Shuffle orchestrates. Wazuh, The Hive, Shuffle." width="400"></a>
-</p>
-<p>
-  <a href="https://github.com/tanu-1309/elk-siem-dashboard"><img src="assets/cards/elk-siem-dashboard.svg" alt="elk-siem-dashboard: a SIEM on the ELK stack in Docker with GeoIP enrichment, Kibana dashboards and alert rules. Elasticsearch, Logstash, Kibana." width="400"></a>
-  <a href="https://github.com/tanu-1309/ai_soc"><img src="assets/cards/ai_soc.svg" alt="ai_soc: local-first, AI-assisted SOC research with trained IDS models and alert triage on Ollama. Python, Ollama, Wazuh." width="400"></a>
-</p>
+## 🛡️ Security Operations Workflow
 
-**Coursework and research**
+```mermaid
+graph TB
+    subgraph Detection Layer
+        A[Log Collection<br/>Wazuh/Sysmon] --> B[Event Correlation<br/>Entity Clustering]
+        B --> C[Sigma Rules<br/>MITRE ATT&CK]
+    end
+    
+    subgraph Analysis Layer
+        C --> D[Threat Intelligence<br/>VirusTotal/OSINT]
+        D --> E[Alert Enrichment<br/>IOC Extraction]
+        E --> F[Automated Triage<br/>Severity Scoring]
+    end
+    
+    subgraph Response Layer
+        F --> G[Incident Queue<br/>The Hive]
+        G --> H[Response Orchestration<br/>Shuffle/Python]
+        H --> I[Remediation Actions<br/>EDR/Firewall]
+    end
+    
+    subgraph Reporting Layer
+        I --> J[Documentation<br/>Chain of Custody]
+        J --> K[Compliance Reporting<br/>Audit Evidence]
+    end
+    
+    style Detection Layer fill:#1a1a2e
+    style Analysis Layer fill:#16213e
+    style Response Layer fill:#0f3460
+    style Reporting Layer fill:#533483
+```
 
-- **Digital forensics lab.** Staged a breach in an isolated VM lab, then reconstructed it: disk with Autopsy, memory with Volatility 3, network with Wireshark, with chain-of-custody records and SHA-256 evidence hashing.
-- **Cryptographic key management system.** Python and Flask, with AES-GCM, RSA-OAEP and PBKDF2 for key storage, plus key rotation, revocation, audit logging and role-based access.
-- **Cloud storage security on blockchain.** Elliptic-curve encryption with Ethereum smart contracts for hash-based integrity checks.
-- **Published paper (co-author).** Botnet detection on the Bot-IoT dataset with Decision Tree, Random Forest and 1D-CNN models, in the International Journal of Research Publication and Reviews (IJRPR).
+---
 
-Also comfortable with Autopsy and FTK Imager, Java, C, JavaScript, Flask, Git, and AWS and Azure fundamentals.
+## 🔐 Vulnerability Management Pipeline
 
-I'm open to opportunities. Email is the quickest way to reach me.
+```mermaid
+sequenceDiagram
+    participant Scanner as Qualys VMDR/Nmap
+    participant Tracker as Excel Tracking System
+    participant Team as Cross-Functional Team
+    participant Validation as Security Validation
+    participant Report as Audit Reporting
+    
+    Scanner->>+Tracker: Vulnerability Findings
+    Note over Scanner,Tracker: 75-80 Assessments Completed
+    
+    Tracker->>+Team: Remediation Assignment
+    Note over Tracker,Team: Timeline Coordination
+    
+    Team->>+Validation: Remediation Evidence
+    Note over Team,Validation: Configuration Changes
+    
+    Validation->>+Report: Closure Documentation
+    Note over Validation,Report: Compliance Evidence
+    
+    Report-->>-Scanner: Re-scan Validation
+    Note over Report,Scanner: Audit Trail Complete
+```
+
+---
+
+## 💻 Technical Arsenal
+
+### 🔴 Security Operations & Analysis
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+
+### 🟠 Security Tools & Platforms
+
+![Qualys](https://img.shields.io/badge/Qualys_VMDR-ED1C24?style=for-the-badge&logo=qualys&logoColor=white)
+![Nmap](https://img.shields.io/badge/Nmap-0E83CD?style=for-the-badge&logo=nmap&logoColor=white)
+![Wireshark](https://img.shields.io/badge/Wireshark-1679A7?style=for-the-badge&logo=wireshark&logoColor=white)
+![FortiGate](https://img.shields.io/badge/FortiGate-EE3124?style=for-the-badge&logo=fortinet&logoColor=white)
+
+### 🟡 Forensics & Incident Response
+
+![Autopsy](https://img.shields.io/badge/Autopsy-000000?style=for-the-badge&logo=autopsy&logoColor=white)
+![Volatility](https://img.shields.io/badge/Volatility_3-4B275F?style=for-the-badge&logo=volatility&logoColor=white)
+![FTK Imager](https://img.shields.io/badge/FTK_Imager-003B57?style=for-the-badge&logo=accessdata&logoColor=white)
+
+### 🟢 Frameworks & Methodologies
+
+![MITRE ATT&CK](https://img.shields.io/badge/MITRE_ATT%26CK-FF0000?style=for-the-badge&logo=mitre&logoColor=white)
+![OSINT](https://img.shields.io/badge/OSINT_Framework-000000?style=for-the-badge&logo=osint&logoColor=white)
+![Sigma](https://img.shields.io/badge/Sigma_Rules-0066CC?style=for-the-badge&logo=sigma&logoColor=white)
+
+### 🔵 Development & Automation
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+### 🟣 Cloud & Infrastructure
+
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![VirtualBox](https://img.shields.io/badge/VirtualBox-183A61?style=for-the-badge&logo=virtualbox&logoColor=white)
+
+### 🟤 Databases & Data Management
+
+![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![Microsoft Excel](https://img.shields.io/badge/Excel_Analytics-217346?style=for-the-badge&logo=microsoft-excel&logoColor=white)
+
+---
+
+## 📊 Expertise Distribution
+
+```mermaid
+%%{init: {'theme':'dark'}}%%
+pie title Technical Skill Distribution
+    "Security Operations" : 30
+    "Vulnerability Management" : 25
+    "Automation & Scripting" : 20
+    "Digital Forensics" : 15
+    "Cloud Security" : 10
+```
+
+---
+
+## 🎯 Professional Experience
+
+### 🔹 Cyber Security Intern | BlueCloud Softech Solutions
+**Jan 2025 – Dec 2025**
+
+**Vulnerability Assessment & Remediation:**
+- Executed **75-80 vulnerability assessments** using Qualys VMDR and Nmap across multiple concurrent engagements
+- Managed remediation tracking via Excel-based systems, coordinating closure of security findings across cross-functional teams
+- Reduced configuration variance by contributing to EDR agent deployment standardization across **500+ endpoints**
+
+**Detection Engineering & Automation:**
+- Developed detection logic aligned to **MITRE ATT&CK framework**, improving lateral movement detection fidelity by ~20%
+- Built Python and PowerShell automation scripts integrated with firewall APIs and threat intelligence feeds
+- Contributed to **30% reduction in MTTR** through automated credential revocation and host isolation workflows
+
+**Infrastructure Security:**
+- Configured FortiGate firewall rules and implemented SPF, DKIM, DMARC policies on FortiMail
+- Reduced email spoofing risk and improved network operational efficiency by up to **70%**
+
+**Incident Response:**
+- Supported forensic analysis and containment during AWS EC2 compromise investigation
+- Identified critical Active Directory and perimeter firewall misconfigurations through infrastructure assessments
+
+**Technologies:** Qualys VMDR, Nmap, EDR Platforms, MITRE ATT&CK, Python, PowerShell, FortiGate, AWS EC2, Active Directory
+
+---
+
+### 🔹 Virtual Intern | Palo Alto Networks
+**Jul 2024 – Sep 2024**
+
+**Threat Detection Optimization:**
+- Configured and fine-tuned intrusion detection systems (IDS) and firewalls, increasing threat identification accuracy by **35%**
+- Integrated threat intelligence platforms, consolidating data from **10 API sources** into unified interface
+- Reduced analysis time by **50%** through centralized threat intelligence correlation
+
+**Security Automation:**
+- Developed automation scripts for security log analysis and QA task streamlining
+- Reduced manual review time by approximately **3 hours per task** through automated workflows
+
+**Knowledge Transfer:**
+- Facilitated security awareness sessions on threat detection and incident response strategies for peer teams
+
+**Technologies:** IDS, Firewalls, Threat Intelligence APIs, Python Automation
+
+---
+
+## 🚀 Featured Security Projects
+
+### 🔐 Digital Forensics Investigation Lab
+**End-to-End Forensic Analysis Simulation**
+
+Designed and executed a complete digital forensics investigation workflow within an isolated virtual environment, demonstrating practical DFIR capabilities from evidence acquisition through reporting.
+
+**Technical Implementation:**
+- Staged realistic security breach scenarios generating forensic artifacts: dropped files, deleted data, manipulated timestamps, persistence mechanisms, and network exfiltration traffic
+- Conducted disk forensics with **Autopsy** and memory analysis with **Volatility 3**, recovering deleted artifacts and identifying memory-resident IOCs
+- Performed network forensics with **Wireshark** to reconstruct exfiltrated data flows and correlate disk/memory/network evidence
+- Documented findings with formal chain-of-custody records and **SHA-256 evidence hashing** for evidentiary integrity
+
+**Technologies:** Autopsy, Volatility 3, Wireshark, VirtualBox, FTK Imager, Python, Windows Registry Analysis, SHA-256 Hashing
+
+**Key Outcomes:**
+- Complete incident timeline reconstruction from multi-source evidence
+- Demonstrated DFIR best practices aligned with incident response standards
+- Validated evidence handling procedures suitable for legal/compliance requirements
+
+---
+
+### 🤖 AI-Augmented Security Operations Center (AI-SOC)
+**[View Repository](https://github.com/tanu-1309/ai_soc)**
+
+Local-first SOC automation platform combining machine learning intrusion detection, alert enrichment, and response orchestration for security operations research.
+
+**Architecture Highlights:**
+- **Detection Layer:** Wazuh/Sysmon log collection → Entity clustering → Sigma rules + MITRE ATT&CK mapping
+- **Analysis Layer:** VirusTotal threat intelligence → IOC extraction → Automated triage with severity scoring
+- **Response Layer:** The Hive incident queue → Shuffle orchestration → EDR/firewall remediation actions
+- **Reporting Layer:** Chain-of-custody documentation → Compliance audit evidence
+
+**Technical Features:**
+- Trained IDS models on CICIDS2017 dataset for network intrusion detection
+- Local LLM inference via Ollama for alert triage (no external API dependencies)
+- Retrieval-augmented generation over security knowledge bases
+- Swarm-scale attack simulation for response testing
+- Prototype response orchestrator with automated remediation workflows
+
+**Technologies:** Python, Wazuh, Sigma Rules, MITRE ATT&CK, VirusTotal API, The Hive, Shuffle, Ollama, CICIDS2017 Dataset
+
+**Research Impact:**
+- Demonstrates practical AI-assisted SOC operations at research scale
+- Local-first architecture ensures sensitive security data never leaves environment
+- Modular design enables component-level testing and validation
+
+---
+
+### 🎯 Sentinel Triage: Automated SIEM Alert Correlation
+**[View Repository](https://github.com/tanu-1309/sentinel-triage)**
+
+Production-ready SIEM automation system that cuts mean-time-to-triage through intelligent correlation, Sigma rule detection, and LLM-powered summarization with citation grounding.
+
+**Architecture Components:**
+
+```
+Endpoint Logs → Redis Streams → OpenSearch → Entity Clustering → Sigma/MITRE Detection → 
+LLM Triage (Citation Grounded) → Analyst Review Queue → Eval Harness (Precision/Recall/FPR)
+```
+
+**Core Capabilities:**
+- **Correlation Engine:** Time-window entity clustering groups events into candidate incidents (15-min default window)
+- **Detection Layer:** Practical Sigma rule subset with field selections + count/distinct_count aggregations
+- **Triage Automation:** LLM function-calling with mandatory citation grounding (hallucinated event IDs rejected)
+- **Analyst Queue:** SQLite-backed review workflow (approve/reject/escalate with audit trail)
+- **Eval Harness:** Automated precision/recall/F1/FPR measurement against labeled datasets
+
+**Bundled Detection Rules (Sigma + MITRE):**
+- Brute Force Authentication (T1110/T1110.001): ≥5 failures in 10min
