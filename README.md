@@ -16,43 +16,9 @@ Cyber security engineer with hands-on experience in **vulnerability assessment**
 
 My work sits where tooling meets process: scanner findings that become tracked remediation, MITRE ATT&CK detection logic, firewall and email hardening, and Python and PowerShell automation that takes hours out of incident response. At BlueCloud Softech I ran that loop end to end: scan it, triage it, write it up, and chase the fix until it closed.
 
-**Core Expertise:** Security Operations Center (SOC) automation • Vulnerability management • Security documentation & policy development • Digital forensics & incident response • Threat intelligence integration • Python/PowerShell automation • MITRE ATT&CK framework implementation
+**Core Expertise:** Vulnerability management • Security documentation & policy development • Digital forensics & incident response • Threat intelligence integration • Python/PowerShell automation • MITRE ATT&CK framework implementation
 
 **Portfolio:** [tanusreereddy.com](https://tanusreereddy.com) • **Status:** Open to opportunities
-
----
-
-## 🏗️ Security Operations Architecture
-
-```mermaid
-mindmap
-  root((Security Operations))
-    Vulnerability Management
-      Qualys VMDR
-      Nmap Scanning
-      Remediation Tracking
-      Audit Reporting
-    Threat Detection
-      EDR Platforms
-      MITRE ATT&CK
-      Sigma Rules
-      IDS Configuration
-    Security Automation
-      Python Scripts
-      PowerShell Automation
-      API Integration
-      Workflow Orchestration
-    Incident Response
-      Digital Forensics
-      Log Analysis
-      Evidence Collection
-      Chain of Custody
-    Compliance & Risk
-      Security Audits
-      Policy Documentation
-      Risk Assessment
-      DMARC Implementation
-```
 
 ---
 
@@ -78,40 +44,6 @@ timeline
         Graduate Studies : Master of Applied Computing
                          : University of Windsor
                          : Security Automation Focus
-```
-
----
-
-## 🛡️ Security Operations Workflow
-
-```mermaid
-graph TB
-    subgraph Detection Layer
-        A[Log Collection<br/>Wazuh/Sysmon] --> B[Event Correlation<br/>Entity Clustering]
-        B --> C[Sigma Rules<br/>MITRE ATT&CK]
-    end
-    
-    subgraph Analysis Layer
-        C --> D[Threat Intelligence<br/>VirusTotal/OSINT]
-        D --> E[Alert Enrichment<br/>IOC Extraction]
-        E --> F[Automated Triage<br/>Severity Scoring]
-    end
-    
-    subgraph Response Layer
-        F --> G[Incident Queue<br/>The Hive]
-        G --> H[Response Orchestration<br/>Shuffle/Python]
-        H --> I[Remediation Actions<br/>EDR/Firewall]
-    end
-    
-    subgraph Reporting Layer
-        I --> J[Documentation<br/>Chain of Custody]
-        J --> K[Compliance Reporting<br/>Audit Evidence]
-    end
-    
-    style Detection Layer fill:#1a1a2e
-    style Analysis Layer fill:#16213e
-    style Response Layer fill:#0f3460
-    style Reporting Layer fill:#533483
 ```
 
 ---
@@ -146,7 +78,7 @@ sequenceDiagram
 
 ## 💻 Technical Arsenal
 
-### 🔴 Security Operations & Analysis
+### 🔴 Programming & Scripting
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
@@ -199,7 +131,6 @@ sequenceDiagram
 ```mermaid
 %%{init: {'theme':'dark'}}%%
 pie title Technical Skill Distribution
-    "Security Operations" : 30
     "Vulnerability Management" : 25
     "Automation & Scripting" : 20
     "Digital Forensics" : 15
